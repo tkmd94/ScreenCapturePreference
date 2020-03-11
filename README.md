@@ -22,9 +22,9 @@ VARIAN社製治療計画装置Eclipse上でスクリーンキャプチャを行�
 - ユーザー毎の設定ファイルは次のフォルダに格納されています。
  - 「\\ARIASVR\MLC\--- ESAPI ---\ScreeCapturePreference」
  - ファイル名は「ユーザー名」+「_ScreeCapturePreference.txt」
- -「保存場所」と「キャプチャ領域」をカンマ区切りで指定します。
-  - 保存場所：絶対パス指定　
-  - キャプチャ領域：「FullScreen」もしくは「ActiveWindow」 
+ - 「保存場所」と「キャプチャ領域」をカンマ区切りで指定します。
+   - 保存場所：絶対パス指定　
+   - キャプチャ領域：「FullScreen」もしくは「ActiveWindow」 
   
  例）「C:\Users\vms\Desktop,ActiveWindow」
 
