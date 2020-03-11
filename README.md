@@ -11,20 +11,14 @@ VARIAN社製治療計画装置Eclipse上でスクリーンキャプチャを行�
 
 ## 操作方法
 
-- 「Tools」-->「Scripts」から「ScreenCapturePreference.esapi.dll」を選択する。
-- 「Keyboard Shortcut」を入力状態にして、ショートカットキーを登録します。
- 例）[CTRL]+[SHIFT]+[C]
-- スクリプトは必ず**設定したショートカットキー**で実行します。
-- 0.5秒間の待機後に画面キャプチャが行われます。
-- デフォルト設定は以下の通りです。　(＊)の項目は設定変更をスクリプト「ScreenCapturePreference」で行えます。
-  - キャプチャ領域：アクティブウィンドウ　(＊)
-  - 保存場所：デスクトップ　(＊)
-  - 保存形式：JPEG
-  - 保存ファイル名：SC_患者ID_コースID_プランID_年月日_時分秒.jpg
-
+- 「Tools」-->「Scripts」から「ScreenCapturePreference.esapi.dll」を選択します。
+- 「Run」ボタンを押して実行します。
+- 「Set folder」ボタンでキャプチャ画像の保存先を指定します。
+- ラジオボタン「Full Screen」もしくは「Active Window」を選択してキャプチャ領域を設定します。
+- 「Save Preference」ボタンを押して設定を保存します。
+- 必要に応じて「Open folder」ボタンを押して指定フォルダを開きます。
 ## 各種設定
 - 設定はユーザー毎かつ端末共通です。
-- 各種設定の変更はスクリプト「ScreenCapturePreference」で行います。
 - ユーザー毎の設定ファイルは次のフォルダに格納されています。
  - 「\\ARIASVR\MLC\--- ESAPI ---\ScreeCapturePreference」
  - ファイル名は「ユーザー名」+「_ScreeCapturePreference.txt」
@@ -36,3 +30,4 @@ VARIAN社製治療計画装置Eclipse上でスクリーンキャプチャを行�
 
 ## UI画面
 
+![Screen capture of planCompare UI](https://github.com/tkmd94/ScreenCapturePreference/blob/master/SC.jpg)
