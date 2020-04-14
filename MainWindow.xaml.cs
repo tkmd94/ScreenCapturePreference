@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Forms;
 using System.IO;
+using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace ScreenCapturePreference
 {
@@ -39,12 +40,23 @@ namespace ScreenCapturePreference
         /// <param name="e"></param>
         private void SetFolderButton_Click(object sender, RoutedEventArgs e)
         {
-            FolderBrowserDialog fbd = new FolderBrowserDialog();
-            fbd.SelectedPath = exportFilePath;
-            fbd.ShowNewFolderButton = true;
-            if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            //FolderBrowserDialog fbd = new FolderBrowserDialog();
+            //fbd.SelectedPath = exportFilePath;
+            //fbd.ShowNewFolderButton = true;
+            //if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            //{
+            //    exportFilePath = fbd.SelectedPath;
+            //    pathTextBlock.Text = exportFilePath;
+            //}
+
+            var dlg = new CommonOpenFileDialog();
+            dlg.IsFolderPicker = true;
+            dlg.InitialDirectory = exportFilePath;
+            dlg.DefaultDirectory = @"C:\Users\vms\Desktop";
+
+            if(dlg.ShowDialog()==CommonFileDialogResult.Ok)
             {
-                exportFilePath = fbd.SelectedPath;
+                exportFilePath = dlg.FileName;
                 pathTextBlock.Text = exportFilePath;
             }
         }
