@@ -34,8 +34,8 @@ namespace VMS.TPS
 
             mainWindow.Title = "ScreenCapture Preference";
 
-            string defaultPath = @"\\172.16.10.181\va_transfer\MLC\--- ESAPI ---\ScreeCapturePreference\";
-            string preferenceFilePath = defaultPath + context.CurrentUser.Name + "_ScreeCapturePreference.txt";
+            string defaultPath = @"\\172.16.10.181\va_transfer\MLC\--- ESAPI ---\ScreenCapturePreference\";
+            string preferenceFilePath = defaultPath + context.CurrentUser.Name + "_ScreenCapturePreference.txt";
             string exportFilePath = @"C:\Users\vms\Desktop";
             bool fullScreenFlag = false;
 
